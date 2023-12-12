@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+@media print {
+    body * {
+      visibility: hidden; /* Oculta todo en el cuerpo durante la impresión */
+    }
+    #comprobantePago, #comprobantePago * {
+      visibility: visible; /* Solo el comprobante es visible */
+    }
+    #comprobantePago {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  
+  
